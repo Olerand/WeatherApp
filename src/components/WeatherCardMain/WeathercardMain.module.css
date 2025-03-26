@@ -1,0 +1,48 @@
+.main{
+    width: 60%;
+    height: 100%;
+    padding: 5%;
+    border-right: 1px solid rgb(233, 161, 224);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .main__radio{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        
+    }
+    .main__temperature{
+        font-size: 10.25rem;
+        display: flex;
+        margin-bottom: 17px;
+    }
+    .main__span{
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    .main__date{
+        font-size: 2.25rem;
+        margin-bottom: 16px;
+    }
+    .main__time{
+        font-size: 1.5rem;
+        margin-bottom: 38px;
+    }
+    .main__property{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        font-size: 1.375rem;
+    }
+}
+
+
+
+

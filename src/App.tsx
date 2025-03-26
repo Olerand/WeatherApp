@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-function App() {
+import WeatherCardMain from './components/WeatherCardMain/WeatherCardMain';
+import WeatherCardSide from './components/WeatherCardSide/WeatherCardSide';
+
+
+const apiKey:string = process.env.REACT_APP_API_KEY as string;
+const  App = () =>{
+
+  const [weatherData,setWeatherData] = useState<any>('')
+
+  async function fetchWeather(city:string){
+    try{
+      const response =  await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+      setWeatherData(response.data)
+    }catch (error){
+      console.log(error)
+
+    }
+  
+  }
+
+
+  useEffect(()=>{
+    fetchWeather('Taranto')
+  },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='card'>
+      <WeatherCardMain  data = {weatherData}/>
+      <WeatherCardSide/>
     </div>
+
+    
   );
 }
 
