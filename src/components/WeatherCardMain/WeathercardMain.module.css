@@ -1,7 +1,7 @@
 .main{
     width: 60%;
     height: 100%;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
     border-right: 1px solid rgb(233, 161, 224);
     display: flex;
     flex-direction: column;
@@ -40,6 +40,11 @@
         align-items: center;
         text-align: center;
         font-size: 1.375rem;
+        margin-bottom: 50px;
+    }
+    .main__img{
+        width: 150px;
+        height: 150px;
     }
 }
 
