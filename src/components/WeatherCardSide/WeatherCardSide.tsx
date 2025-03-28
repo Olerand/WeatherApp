@@ -1,10 +1,22 @@
-import React from 'react'
-import cl from './WeathercardSide.module.css'
+import React,{FC, useEffect, useState} from 'react'
+import cl from './WeatherCardSide.module.css'
+import { WeatherData } from '../../types'
+import InputSearch from '../InputSearch/InputSearch'
+import Watch from '../Watch/Watch'
+interface WeatherCardSideProps{
+  city:string
+  setCity:(value:string) => void;
+  data:WeatherData
+  children?: React.ReactElement
+}
 
-const WeatherCardSide = () => {
+
+const WeatherCardSide:FC<WeatherCardSideProps> = ({data,city,setCity}) => {
+  
   return (
-    <div>
-      
+    <div className={cl.card}>
+      <InputSearch data={data} setCity={setCity}  />
+      <Watch data={data}   />
     </div>
   )
 }

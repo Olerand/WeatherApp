@@ -3,9 +3,11 @@ import InputTogle from '../InputTogle/InputTogle'
 import cl from './WeathercardMain.module.css'
 import { getDayOfMonth,getMonthName,getNameOfDayWeek,getTime,getYear } from '../../helpers/helper'
 import WeekCards from '../WeekCards/WeekCards'
+import { WeatherData } from '../../types'
 
 interface WeatherCardMainProps{
-  data:any
+  data:WeatherData
+  children?:React.ReactElement 
 }
 
 const WeatherCardMain:FC<WeatherCardMainProps> = ({data}) => {

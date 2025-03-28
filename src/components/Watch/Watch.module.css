@@ -1,0 +1,24 @@
+.watches{
+  width: 462px;
+  height: 325px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .watch{
+    width: 105px;
+    height: 210px;
+    border-radius: 50px;
+    background-color: rgb(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
