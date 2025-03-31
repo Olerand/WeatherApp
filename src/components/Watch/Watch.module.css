@@ -12,6 +12,17 @@
     align-items: center;
     text-align: center;
   }
+  .title{
+    color: white;
+    font-size: 1.75rem;
+    line-height: 120%;
+    letter-spacing: 0px;
+    font-weight: lighter;
+  }
+  .wrapper:nth-child(2n) .title{
+    width: 165px;
+    height: 34px;
+  }
   .watch{
     width: 105px;
     height: 210px;
@@ -20,5 +31,47 @@
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+
   }
+  .wrapper:not(:nth-child(2)){
+    padding-top: 50px;
+  }
+  .wrapper:nth-child(2) .watch{
+    width: 130px;
+    height: 245px;
+    padding-top: 30px;
+    border-radius: 100px;
+  }
+  
+  .arrows{
+    width: 68px;
+    height: 34px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+  .wrapper:nth-child(2) .watch .arrows{
+    align-items: center;
+    width: 75px;
+    height: 38px;
+
+  }
+  .timeMain{
+    font-size: 1.75rem;
+    color: white;
+    line-height: normal;
+    margin-bottom: 7px;
+    
+  }
+  .timeSide{
+    font-size: 1.75rem;
+    color: rgb(235, 235, 235,100);
+    line-height: normal;
+  }
+  .wrapper:nth-child(2) .watch .timeMain,
+  .wrapper:nth-child(2) .watch .timeSide{
+    font-size: 2rem;
+  }
+}
+span{
+  font-size: 1.75rem;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Показатели качества воздуха и UV-индекса</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .metric {
+            text-align: center;
+            width: 48%;
+        }
+        .metric-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .metric-value {
+            font-size: 24px;
+            margin: 5px 0;
+        }
+        .metric-scale {
+            font-size: 14px;
+            color: #666;
+        }
+        .metric-description {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="metric">
+            <div class="metric-title">Air Quality</div>
+            <div class="metric-value">2/5</div>
+            <div class="metric-scale">Moderate</div>
+        </div>
+        <div class="metric">
+            <div class="metric-title">UV Index</div>
+            <div class="metric-value">6/10</div>
+            <div class="metric-scale">High</div>
+        </div>
+    </div>
+</body>
+</html>
