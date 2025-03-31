@@ -24,6 +24,10 @@ export type WeatherLocation = {
     localtime:string
 }
 export type WeatherDay = {
+    astro:{
+        sunrise:string,
+        sunset:string
+    }
     date:string,
     day:{        
         daily_chance_of_rain:number
