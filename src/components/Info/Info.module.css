@@ -1,0 +1,18 @@
+.main__temperature{
+    font-size: 10.25rem;
+    display: flex;
+    margin-bottom: 17px;
+}
+.main__span{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.main__date{
+    font-size: 2.25rem;
+    margin-bottom: 16px;
+}
+.main__time{
+    font-size: 1.5rem;
+    margin-bottom: 38px;
+}

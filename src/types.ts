@@ -10,6 +10,10 @@ export type WeatherCurrent = {
     temp_f:number
     wind_kph:number
     wind_mph:number
+    uv:number
+    air_quality:{
+        'us-epa-index': number;
+    }
     condition:{
         text:string,
         icon:string

@@ -7,7 +7,7 @@ import WeatherCardSide from './components/WeatherCardSide/WeatherCardSide';
 import { WeatherData } from './types';
 
 const API_KEY:string = process.env.REACT_APP_API_KEY as string;
-localStorage.lastCity = localStorage.lastCity || 'Moscow'
+localStorage.lastCity = localStorage.lastCity || 'London'
 
 const  App = () =>{
 
@@ -29,17 +29,20 @@ const  App = () =>{
  
 
 
+
   return (
     <div className='card'>
       {
         weatherData != null ? 
         <>
           <WeatherCardMain 
-            data = {weatherData}/>
+            data = {weatherData}
+          />
           <WeatherCardSide 
-          data={weatherData} 
-          city={city} 
-          setCity={setCity}  />
+            data={weatherData} 
+            city={city} 
+            setCity={setCity}  
+          />
         </>
         :
         null

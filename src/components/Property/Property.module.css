@@ -1,0 +1,12 @@
+.main__property{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 1.375rem;
+    margin-bottom: 50px;
+}
+.main__img{
+    width: 150px;
+    height: 150px;
+}
