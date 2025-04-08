@@ -10,7 +10,7 @@ interface WeatherCardSideProps{
   data:WeatherData
   children?: React.ReactElement
 }
-
+//
 
 const WeatherCardSide:FC<WeatherCardSideProps> = ({data,city,setCity}) => {
   
