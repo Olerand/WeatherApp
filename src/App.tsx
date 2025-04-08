@@ -13,7 +13,7 @@ const  App = () =>{
 
 
   const [weatherData,setWeatherData] = useState<WeatherData>()
-  const [city,setCity] = useState<string>(localStorage.lastCity)
+  const [city,setCity] = useState<string>(localStorage.lastCity || 'London')
   async function fetchWeather(city:string){
     try{
       const response =  await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=5&aqi=yes&alerts=no`)
