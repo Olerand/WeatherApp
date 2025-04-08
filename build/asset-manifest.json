@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33259fea.css",
+    "main.js": "/static/js/main.41d96141.js",
+    "static/media/Inter-Thin.otf": "/static/media/Inter-Thin.ce527d9d96bea5cb1966.otf",
+    "static/media/Overpass-Light.ttf": "/static/media/Overpass-Light.b641f8e22651db96492a.ttf",
+    "index.html": "/index.html",
+    "main.33259fea.css.map": "/static/css/main.33259fea.css.map",
+    "main.41d96141.js.map": "/static/js/main.41d96141.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33259fea.css",
+    "static/js/main.41d96141.js"
+  ]
+}
