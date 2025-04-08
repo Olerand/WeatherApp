@@ -1,4 +1,4 @@
-import React,{FC, useState,useEffect} from 'react'
+import React,{FC, useState} from 'react'
 import InputTogle from '../InputTogle/InputTogle'
 import cl from './WeathercardMain.module.css'
 import Info from '../Info/Info'
@@ -18,7 +18,7 @@ const WeatherCardMain:FC<WeatherCardMainProps> = ({data}) => {
   return (
     <div className={cl.main}>
       <div className={cl.main__radio}>
-        <img className={cl.main__img} src={`https://${data.current.condition.icon}`} alt="Image of weather" />
+        <img className={cl.main__img} src={`https://${data.current.condition.icon}`} alt="Weather condition" />
         <InputTogle setWeatherSystem = {setWeatherSystem}  weatherSystem = {weatherSystem} />
       </div>
       <Info data={data} weatherSystem={weatherSystem}/>

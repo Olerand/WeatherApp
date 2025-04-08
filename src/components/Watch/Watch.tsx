@@ -5,24 +5,13 @@ import cl from './Watch.module.css'
 import watchIcon from './../../assets/icon/watch.png'
 import axios from 'axios'
 
-
 interface WatchProps{
       data:WeatherData
 }
 
-
-
-
-
-
-
-
-
-
 const Watch:FC<WatchProps> = ({data}) => {
   const SunCalc = require('suncalc');
-
- const [morningGolden, setMorningGolden] = useState<string>('');
+  const [morningGolden, setMorningGolden] = useState<string>('');
   const [eveningGolden, setEveningGolden] = useState<string>('');
 
   useEffect(() => {
@@ -46,7 +35,7 @@ const Watch:FC<WatchProps> = ({data}) => {
     };
 
     fetchGoldenHours();
-  }, [data.location.name, data.location.localtime]);
+  }, [data.location.name, data.location.localtime, SunCalc]);
 
 
 

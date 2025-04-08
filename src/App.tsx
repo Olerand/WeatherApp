@@ -1,7 +1,6 @@
 import './App.css'
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Preloader from './components/Preloader/Preloader';
 import WeatherCardMain from './components/WeatherCardMain/WeatherCardMain';
 import WeatherCardSide from './components/WeatherCardSide/WeatherCardSide';
 import { WeatherData } from './types';

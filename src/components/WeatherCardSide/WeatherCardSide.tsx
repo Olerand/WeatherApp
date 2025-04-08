@@ -1,4 +1,4 @@
-import React,{FC, useEffect, useState} from 'react'
+import React,{FC} from 'react'
 import cl from './styles.module.css'
 import { WeatherData } from '../../types'
 import InputSearch from '../InputSearch/InputSearch'
